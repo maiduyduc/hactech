@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<head lang="en">
+    <title>Tuyển sinh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+    <script type="text/javascript" charset="utf-8" src="./js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./js/jdmenu.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./js/library.js"></script>
+    <style>
+        /* table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        } */
+
+        td {
+            vertical-align: top;
+            /* text-align: center; */
+            font-size: 14pt;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div id="logo" align="right"
+                style="width:1000px; height:121px; background:url(./images/banner_top1.jpg) no-repeat">
+                <div style="padding:7px;">
+                    <a href="#"><img src="./images/vn.jpg" /></a>
+                    <a href="#"><img width="28" height="20" src="./images/en.jpg" /></a>
+                </div>
+                <div class="ggs" style="margin-top: 10px;width: 270px; height: 60px; background: white">
+                    <div class="ggs_c">
+                        <form action="">
+                            <table cellspacing="10px">
+                                <tr>
+                                    <td>
+                                        <input type="text"
+                                            style="width: 150px; height: 30px; background: url(./images/branding.png) left center no-repeat;">
+                                    </td>
+                                    <td>
+                                        <button
+                                            style="width: 65px; height: 30px; background-color: #cccccc ;background: url(./images/find.PNG) repeat-x;"></button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div style=" background:url(./images/bg_menutop.jpg) repeat-x; height:32px;">
+                <ul class="menu" id="menu">
+                    <li style="margin-left:10px"><a href="./index.html" id="menu1" class="menu-active">Trang chủ</a>
+                    </li>
+                    <li style="z-index:1"><img src="./images/hr_menutop.jpg" /></li>
+                    <li><a href="./4.Co_cau_to_chuc-TranQuangHien.html" id="menu2" class="menulink_1">Cơ cấu tổ chức</a>
+                        <ul>
+                            <li><a href="#">Sơ đồ bộ máy tổ chức</a></li>
+                            <li><a href="#">Lãnh đạo trường</a></li>
+                            <li><a href="#">Phòng ban</a></li>
+                            <li><a href="#">Khoa chuyên môn</a></li>
+                            <li style="padding-bottom:10px;"><a href="#">Tổ chức đoàn thể</a></li>
+                        </ul>
+                    </li>
+                    <li style="z-index:1"><img src="./images/hr_menutop.jpg" /></li>
+                    <li><a href="./2.Tin_tuc_su_kien-DangHoangDuong.html" id="menu3" class="menulink_1">Tin tức sự kiện</a>
+                        <ul>
+                            <li><a href="#">Tin nội bộ</a></li>
+                            <li><a href="#">Lịch công tác</a></li>
+                            <li style="padding-bottom:10px;"><a href="#">Tin tức sinh viên</a></li>
+                        </ul>
+                    </li>
+                    <li style="z-index:1"><img src="./images/hr_menutop.jpg" /></li>
+                    <li><a href="#" id="menu4" class="menu-active">Tuyển sinh</a>
+                        <ul>
+                            <li><a href="#">Thông tin tuyển sinh</a></li>
+                            <li><a href="#">Câu hỏi thường gặp</a></li>
+                            <li><a href="#">Giới thiệu các nghề đào
+                                    tạo</a></li>
+                            <li style="padding-bottom:10px;"><a href="#">Kết quả tuyển sinh</a></li>
+                        </ul>
+                    </li>
+                    <li style="z-index:1"><img src="./images/hr_menutop.jpg" /></li>
+                    <li><a href="#" id="menu5" class="menu-active">Đào tạo</a>
+                        <ul>
+                            <li><a href="#">Chương trình đào tạo</a>
+                            </li>
+                            <li><a href="#">Quy chế đào tạo</a></li>
+                            <li><a href="#">Liên thông lên Đại học</a></li>
+                            <li><a href="#">Kế hoạch học tập</a></li>
+                            <li><a href="#">Thời khóa biểu</a></li>
+                            <li><a href="#">Lịch thi học kỳ</a></li>
+                            <li><a href="#">Tài liệu học tập</a></li>
+                            <li><a href="#">Phòng đọc</a></li>
+                            <li style="padding-bottom:10px;"><a href="#">Kết quả
+                                    học tập</a></li>
+                        </ul>
+                    </li>
+                    <li style="z-index:1"><img src="./images/hr_menutop.jpg" /></li>
+                    <li><a href="#" id="menu6" class="menulink_1">Sinh viên</a>
+                        <ul>
+                            <li><a href="#">Đoàn thanh niên</a></li>
+                            <li><a href="#">Tư vấn việc làm</a></li>
+                            <li><a href="#">Các mẫu văn bản</a></li>
+                            <li><a href="#">Quy chế công tác sinh viên</a></li>
+                            <li style="padding-bottom:10px;"><a href="#">Microsoft Office
+                                    365</a></li>
+                        </ul>
+                    </li>
+                    <li style="z-index:1"><img src="./images/hr_menutop.jpg" /></li>
+                    <li><a href="#" id="menu7" class="menulink_1">Hợp tác quốc tế</a>
+                        <ul>
+                            <li style="padding-bottom:10px;"><a href="#">Dự án Five</a></li>
+                        </ul>
+                    </li>
+                    <li style="z-index:1"><img src="./images/hr_menutop.jpg" /></li>
+                    <li><a href="./5.Lien_he-DinhMinhHieu.html" id="menu8" class="menulink_1">Liên hệ</a></li>
+                </ul>
+                <script language="javascript">changtab(4, 9)</script>
+                <script type="text/javascript">var menu = new menu.dd("menu"); menu.init("menu", "menuhover");</script>
+            </div>
+
+            <div class="clear"></div>
+            <div
+                style="background:#F2F2F2; margin-top:-2px; height:24px; text-align:right; padding-right:10px; line-height:24px; border:1px solid #F2F2F2;">
+                Chủ nhật, 09/08/2020 | 12:00 GMT+7</div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="clear"></div>
+        <!------------------------------------------------------------->
+        <!---------------------- Viết tiếp vào đây -------------------->
+        <!------------------------------------------------------------->
+        <div id="conten">
+            <div id="home_conten">
+                <div id="left_content">
+                    <div class="left_news">Tuyển sinh</div>
+                    <div style="background:url(./images/bg_left.jpg) no-repeat; min-height:400px;">
+                        <div class="catname_left"><a href="#" title=" ">Thông tin tuyến sinh</a></div>
+                        <div class="catname_left"><a href="#" title=" ">Câu hỏi thường gặp</a></div>
+                        <div class="catname_left"><a href="#" title=" ">Giới thiệu các nghề đào tạo</a></div>
+                        <div class="catname_left"><a href="#" title=" ">Kết quả tuyển sinh</a></div>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+                <div id="type_content">
+                    <div id="cat_name">
+                        <h1>Thông tin tuyển sinh</h1>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="hr_top_newstype"></div>
+                    <div class="clear"></div>
+                    <div id="detail_news_title">
+                        <h1>Thông báo tuyển sinh hệ cao đẳng khóa 12 năm 2020</h1>
+                    </div>
+                    <!------------------------------------->
+                    <!------------------------------------->
+                    <div id="news_des_detail">
+                        <!-- noi dung tuyen sinh -->
+                        <p></p>
+                        <p style=" line-height: 120%;">
+                            <span style="color: blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THÔNG BÁO TUYỂN SINH HỆ CAO
+                                ĐẲNG NĂM 2020</span>
+                        </p>
+                        <p style="margin-bottom: 40px;"></p>
+                        <p>
+                            <span>Trường Cao đẳng nghề Bách Khoa Hà Nội</span>
+                            thuộc Đại học Bách khoa Hà Nội tuyển sinh hệ Cao đẳng khóa 12
+                            năm học 2020-2021 với chỉ tiêu và các nghề đào tạo như sau:
+                        </p>
+                        <p>
+                            <span>1. Chỉ tiêu tuyển sinh:</span>
+                            2.000 sinh viên.
+                        </p>
+                        <p>
+                            <span>2. Các nghề đào tạo</span>
+                        <table border="1">
+                            <colgroup>
+                                <col span="1" style="width: 50pt; padding:0cm 5.4pt 0cm 5.4pt">
+                                <col span="1" style="width: 220pt; padding:0cm 5.4pt 0cm 5.4pt">
+                                <col span="1" style="width: 60pt; padding:0cm 5.4pt 0cm 5.4pt">
+                                <col span="1" style="width: 50pt; padding:0cm 5.4pt 0cm 5.4pt">
+                                <col span="1" style="width: 220pt; padding:0cm 5.4pt 0cm 5.4pt">
+                                <col span="1" style="width: 60pt; padding:0cm 5.4pt 0cm 5.4pt">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><span>TT</span></td>
+                                    <td><span>Nghề đào tạo</span></td>
+                                    <td><span>Chỉ tiêu</span></td>
+                                    <td><span>TT</span></td>
+                                    <td><span>Nghề đào tạo</span></td>
+                                    <td><span>Chỉ tiêu</span></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Quản trị mạng máy tính</td>
+                                    <td>100</td>
+                                    <td>9</td>
+                                    <td>Điện công nghiệp</td>
+                                    <td>150</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Lập trình máy tính</td>
+                                    <td>120</td>
+                                    <td>10</td>
+                                    <td>Kỹ thuật lắp đặt điện & điều khiển trong CN</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Thiết kế đồ họa</td>
+                                    <td>180</td>
+                                    <td>11</td>
+                                    <td>Kỹ thuật máy lạnh & điều hòa không khí</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Ứng dụng phần mềm</td>
+                                    <td>100</td>
+                                    <td>12</td>
+                                    <td>Điện tử công nghiệp</td>
+                                    <td>180</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Công nghệ ô tô</td>
+                                    <td>400</td>
+                                    <td>13</td>
+                                    <td>Kế toán doanh nghiệp</td>
+                                    <td>35</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Cơ điện tử</td>
+                                    <td>250</td>
+                                    <td>14</td>
+                                    <td>Quản trị doanh nghiệp vừa và nhỏ</td>
+                                    <td>35</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Cắt gọt kim loại</td>
+                                    <td>80</td>
+                                    <td rowspan="2">15</td>
+                                    <td rowspan="2">Thương mại điện tử</td>
+                                    <td rowspan="2">35</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Điện dân dụng</td>
+                                    <td>50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </p>
+                        <p>
+                            <span>3. Thời gian đào tạo:</span>
+                            3 năm(riêng đối với các nghề kinh tế: 2,5 năm).
+                        </p>
+                        <p>
+                            <span>4. Bằng cấp:</span>
+                            Sinh viên tốt nghiệp được cấp bằng Cao đẳng chính quy danh hiệu Kỹ sư thực hành.
+                        </p>
+                        <p>
+                            <span>5. Phương thức tuyển sinh</span>
+
+                        <p>- Xét tuyển những thí sinh đã tốt nghiệp THPT (ưu tiên những thí sinh nộp hồ sơ sớm). Điểm
+                            trúng
+                            tuyển của từng nghề sẽ căn cứ trên số lượng thí sinh đăng ký và chỉ tiêu của nghề đó.</p>
+
+                        <p>- Từ khóa 11 (tuyển sinh năm 2019) nhà trường đã triển khai đào tạo chương trình chất lượng
+                            cao.
+                            Hình thức xét tuyển theo thông báo số 13/TB-CĐNBK ngày 15/02/2019:
+                            <a
+                                href="http://www.hactech.edu.vn/vn/Thong-tin-tuyen-sinh-517/Thong-bao-Trien-khai-cac-chuong-trinh-dao-tao-chat-luong-cao-2727.html">http://www.hactech.edu.vn/vn/Thong-tin-tuyen-sinh-517/Thong-bao-Trien-khai-cac-chuong-trinh-dao-tao-chat-luong-cao-2727.html</a>
+                        </p>
+
+                        <p>- Đối với những thí sinh đã tốt nghiệp hệ Trung cấp nghề hoặc Trung cấp chuyên nghiệp, Nhà
+                            trường tuyển sinh hệ liên thông theo quy định trong thông báo số 14/TB-CĐNBK ngày 29/01/2015
+                            (xem trong website http://www.hactech.edu.vn).</p>
+                        </p>
+                        <p>
+                            <span>6. Địa điểm đào tạo</span>
+
+                        <p>Đào tạo tại trường Cao đẳng nghề Bách khoa Hà Nội (nằm trong khuôn viên Trường Đại học Bách
+                            khoa
+                            Hà Nội)</p>
+                        </p>
+                        <p>
+                            <span>7. Quyền lợi của sinh viên</span>
+
+                        <p>- Sau khi tốt nghiệp, sinh viên đủ tiêu chuẩn sẽ được thi liên thông lên bậc Đại học của
+                            trường
+                            Đại học Bách khoa Hà Nội và các trường Đại học có tuyển sinh liên thông trên cả nước (theo
+                            quy
+                            định chung của Bộ GD&ĐT).</p>
+
+                        <p>- Sinh viên tốt nghiệp hệ cao đẳng có thể tham gia chương trình đào tạo nghề nâng cao theo
+                            tiêu
+                            chuẩn Châu Âu (lần đầu tiên được triển khai tại Việt Nam và tổ chức đào tạo tại trường Cao
+                            đẳng
+                            nghề Bách khoa Hà Nội) để được nhận bằng <span>Technical Engineer Diploma</span> của bang
+                            Baden –
+                            Wurttemberg, CHLB Đức.</p>
+
+                        <p>- Sinh viên được giới thiệu việc làm tại các doanh nghiệp trong & ngoài nước và giới thiệu đi
+                            xuất khẩu lao động.</p>
+
+                        <p>- Sinh viên học giỏi sẽ được Nhà trường, doanh nghiệp trong & ngoài nước xem xét hỗ trợ học
+                            phí
+                            hoặc cấp học bổng; đặc biệt sinh viên có cơ hội nhận học bổng du học toàn phần tại bang
+                            Thuringia, CHLB Đức.</p>
+
+                        <p>- Sinh viên có hoàn cảnh khó khăn nếu có nguyện vọng sẽ được ở ký túc xá sinh viên trường Đại
+                            học Bách khoa Hà Nội.</p>
+
+                        <p>- Sinh viên được khám chữa bệnh tại Trung tâm Y tế trường Đại học Bách khoa Hà Nội.</p>
+
+                        <p>- Sinh viên được sử dụng các tài nguyên của Thư viện điện tử, Thư viện giáo trình và các
+                            phòng
+                            thí nghiệm của Đại học Bách khoa Hà Nội.</p>
+                        </p>
+                        <p>
+                            <span>8. Kế hoạch tuyển sinh</span>
+
+                        <p>- Bán hồ sơ tuyển sinh: <i><span>Từ ngày 01/6/2020</span></i></p>
+
+                        <p>- Nhận hồ sơ tuyển sinh: <i><span>Từ ngày 15/7/2020</span></i></p>
+
+                        <p>- Nhập học : Từ ngày <i><span>05/10/2020 đến 07/10/2020</span></i></p>
+                        </p>
+
+                        <p style="margin-left: 110pt;"><u><span>Thông tin chi tiết xin liên hệ:</span></u></p>
+
+                        <p style="margin-top: -15pt; text-align: center;"><span>PHÒNG ĐÀO TẠO & QLSV - TR­ƯỜNG CAO ĐẲNG
+                                NGHỀ BÁCH KHOA HÀ NỘI</span></p>
+
+                        <p style="text-align: justify; margin-left: 20pt;"><span style="font-size: 13pt;">Phòng 101, số
+                                92A Lê Thanh Nghị - Phường Bách Khoa - Quận Hai Bà Trưng - Hà Nội</span></p>
+
+                        <p style="margin-top: -15pt;"><i style="font-size: 14pt;">ĐT: 02436231785 ; 02436231786 ;
+                                02436231787; Hotline: 0393 006 008</i></p>
+
+                        <p><i>Email:<a href=mailto:tuyensinh@hactech.edu.vn>tuyensinh@hactech.edu.vn</a>;</i></p>
+
+                        <p><i>Website: <a href="https://www.hactech.edu.vn">www.hactech.edu.vn</a>; <a
+                                    href="#">Facebook: cdnbachkhoahanoi</a></i></p>
+
+                        <p><span><u style="color: blue;">Ghi chú:</u> - Thí sinh ở xa có thể lấy mẫu hồ sơ trên website
+                                của Trường và nộp theo đường bưu điện
+                                kèm theo lệ phí tuyển sinh 120.000đ.</span></p>
+
+                        <p><span>Bộ hồ sơ bao gồm:</span></p>
+
+                        <p>1. <a style="color: blue;">Sơ yếu lý lịch</a></p>
+
+                        <p>2. <a style="color: blue;">Đơn xin tuyển sinh</a></p>
+
+                        <p>3. Bản sao công chứng giấy khai sinh</p>
+
+                        <p>4. Bản sao công chứng bằng tốt nghiệp hoặc giấy chứng nhận TN tạm thời</p>
+
+                        <p>5. Bản sao công chứng học bạ THPT.</p>
+                        <!-- ket thuc noi dung -->
+                    </div>
+                    <div style="height:25px;"></div>
+                    <div id="bg_static"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!------------------------------------------------------------->
+            <!------------------------------------------------------------->
+            <!------------------------------------------------------------->
+            <div id="right">
+                <div id="banner_left">
+                    <div id="banner_left_5">
+                        <div><a href="./3.Tuyen_sinh-NguyenHoangDuong.html" title=""><img src="./pictures/banners/hcg1590480364.jpg" title="" alt=""
+                                    border="0" style="margin-right:4px;"></a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="banner_left_3"></div>
+                <div class="clear"></div>
+
+                <div id="banner_left">
+                    <div id="banner_left_5">
+                        <div><a href="#" title=""><img src="./pictures/banners/hfo1590480671.jpg" title="" alt=""
+                                    border="0" style="margin-right:4px;"></a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="banner_left_3"></div>
+                <div class="clear"></div>
+
+                <div id="banner_left">
+                    <div id="banner_left_5">
+                        <div><a href="#" title=""><img src="./pictures/banners/kjv1583749060.jpg" title="" alt=""
+                                    border="0" style="margin-right:4px;"></a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="banner_left_3"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div id="menu_bottom">
+            <div id="menu_bootom">
+                <ul>
+                    <li>
+                        <span><a>|</a></span><span><a href=""> Sơ đồ website </a></span>
+                    </li>
+                    <li>
+                        </span><span><a href="#"> Liên hệ &nbsp;</a></span>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div id="footer">
+            <div id="sta_footer" style="text-align:left;">
+                <div id="fb-root"></div>
+                <div id="cfacebook"><a href="javascript:;" class="chat_fb" onclick="return false;"> Hỗ trợ trực
+                        tuyến</a>
+                    <div class="fchat">
+                        <div class="fb-page" data-href="#"></div>
+                    </div>
+                </div>
+                <table width="690" cellspacing="1" cellpadding="0" border="0">
+                    <tbody>
+                        <tr>
+                            <td style="width:325.0pt;padding:.75pt .75pt .75pt .75pt" width="500" valign="top">
+                                <p style="margin-bottom: 0.0001pt;"><strong style="color: rgb(153, 0, 0);">TRƯỜNG CAO
+                                        ĐẲNG NGHỀ BÁCH KHOA HÀ NỘI (HACTECH)</strong></p>
+                                <p style="margin-bottom: 0.0001pt;"><b><span
+                                            style="font-size: 9pt; color: maroon; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">■
+                                            Trụ Sở Chính :</span></b><br />
+                                    <span
+                                        style="font-size: 9pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"
+                                        lang="EN-US"><span
+                                            style="font-size: 9pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Số
+                                            92A - Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</span><br />
+                                        <span
+                                            style="font-size: 9pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"
+                                            lang="EN-US"></span><span
+                                            style="font-size: 9pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Số
+                                            15A - Tạ Quang Bửu - Hai Bà Trưng - Hà Nội<span
+                                                class="apple-converted-space"></span></span></span><span
+                                        style="font-size: 9pt;"><br />
+                                    </span><span
+                                        style="font-size: 9pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"
+                                        lang="EN-US"><span
+                                            style="font-size: 9pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span
+                                                class="apple-converted-space"><b><span
+                                                        style="font-size: 9pt; color: maroon; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">■
+                                                        Điện thoại :</span></b> - 024.36230209/<span
+                                                    class="apple-converted-space">
+                                                    024.38682904/<span class="apple-converted-space">
+                                                    </span>024.38682917/ 024.36231787 (P. Đào
+                                                    Tạo)</span><br />
+                                            </span></span></span><span
+                                        style="font-size: 9pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span
+                                            class="apple-converted-space"><b><span
+                                                    style="font-size: 9pt; color: maroon; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">■
+                                                    Email :</span></b><a href="#">contact@hactech.edu.vn</a><br />
+                                        </span></span><b><span
+                                            style="font-size: 9pt; color: maroon; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">■
+                                            Website :</span></b> <a style="font-size: 12px;"
+                                        href="#">www.hactech.edu.vn</a></p>
+                            </td>
+                            <td style="width:175.75pt;padding:.75pt .75pt .75pt .75pt" width="234" valign="top">
+                                <p style="margin-bottom: 0.0001pt;"><iframe
+                                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcdnbachkhoahanoi%2F&amp;tabs&amp;width=300&amp;height=160&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=269287636537077"
+                                        style="border:none;overflow:hidden" scrolling="no" allowtransparency="true"
+                                        width="300" height="160" frameborder="0"></iframe><span style="font-size: 9pt;">
+                                        <o:p></o:p>
+                                    </span></p>
+                            </td>
+                        </tr>
+
+                        <script>
+                            jQuery(document).ready(function () {
+                                jQuery(".chat_fb").click(function () {
+                                    jQuery('.fchat').toggle('slow');
+                                });
+                            });
+                        </script>
+
+                    </tbody>
+                </table>
+            </div>
+            <div id="banner_footer">
+                <div id="visitor">
+                    <div>
+                        <div id="online"><span>Đang truy
+                                cập</span><span><b>999</b></span><span>&nbsp;&nbsp;&nbsp;&nbsp;Tổng số lượt
+                                truy cập</span><span><strong>99.999.999</strong></span></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="clear"></div>
+                <div id="banner_F">
+                    <div id="banner_F_sub">
+                        <div><a href="#" " title="" ><img src=" ./pictures/banners/ibe1311061099.jpg" title="" alt=""
+                                border="0" style="margin-right:4px;"></a></div>
+                    </div>
+                    <div id="banner_F_sub">
+                        <div><a href="#" " title="" ><img src=" ./pictures/banners/yev1311061087.jpg" title="" alt=""
+                                border="0" style="margin-right:4px;"></a></div>
+                    </div>
+                    <div id="banner_F_sub">
+                        <div><a href="#" " title="" ><img src=" ./pictures/banners/imn1406279255.PNG" title="" alt=""
+                                border="0" style="margin-right:4px;"></a></div>
+                    </div>
+                    <div id="banner_F_sub">
+                        <div><a href="#" " title="" ><img src=" ./pictures/banners/clt1313914846.png" title="" alt=""
+                                border="0" style="margin-right:4px;"></a></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="background_bottom"></div>
+</body>
+
+</html>
