@@ -19,7 +19,7 @@ h2 {
 }
 #page {
 	width: 1000px;
-	margin: 0 auto; /* center on page */
+	margin: 0 auto;
 }
 h3 {
 	margin: 0px;
@@ -88,8 +88,7 @@ h1 {
 	background: url(../images/body_bottom.jpg) no-repeat center;
 	height: 37px;
 }
-/*-detail--*/
-/*phân trang*/
+
 .phantrang {
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -168,7 +167,6 @@ h1 {
 	height: 40px;
 	line-height: 40px;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMV…8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==);
 	background-repeat: repeat-x;
 	background-size: auto;
 	background-position: 0 0;
@@ -184,44 +182,6 @@ h1 {
 	color: yellow;
 	text-decoration: none;
 }
-/* .titlerss {
-	font-weight: 600;
-	text-align: left;
-	padding: 7px 0 0 12px;
-	background: url(./images/icon_temp.png) no-repeat left 10px;
-}
-
-.titlerss a {
-	color: #000000;
-	font-size: 12px;
-}
-
-.titlerss a:hover {
-	color: #000000;
-	font-size: 12px;
-	text-decoration: underline;
-} */
-
-/* .desrss img {
-	border: 1px solid #ff0000;
-	display: none;
-}
-
-.desrss a {
-	display: none;
-}
-
-.desrss A {
-	display: none;
-}
-
-.desrss br {
-	display: none;
-}
-
-.desrss {
-	text-align: justify;
-} */
 
 .ggs {
 	position: relative;
