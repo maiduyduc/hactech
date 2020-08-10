@@ -613,14 +613,14 @@ ul.menu .topline {
 }
 
 #slide_top_ .cs-button-slide_top {
-	background: url(./images/no_active.png) no-repeat;
+	background: url(../images/no_active.png) no-repeat;
 	height: 11px;
 	width: 11px;
 	font-size: 11px;
 }
 
 #slide_top_ .cs-active {
-	background: url(./images/is_active.png) no-repeat;
+	background: url(../images/is_active.png) no-repeat;
 	height: 11px;
 	width: 11px;
 	font-size: 11px;
