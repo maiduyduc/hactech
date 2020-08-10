@@ -469,7 +469,6 @@ ul.menu li {
 	float: left;
 	margin-right: 2px;
 	font-size: 12px;
-	/*text-shadow:#abb9ca -1px 0px;*/
 	z-index: 999;
 }
 
@@ -513,7 +512,6 @@ ul.menu ul li {
 	font-size: 12px;
 	border-bottom: 1px solid #ffffff;
 	margin: 0 5x 0 5px;
-	/* text-shadow:#aab8c9 -1px 0px;*/
 	z-index: 999;
 }
 
