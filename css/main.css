@@ -2,7 +2,7 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-	font-family: Tahome, Arial, Helvetica, sans-serif;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	background: #ececec url(../images/bg_body.jpg) repeat-y center;
 	font-size: 12px;
 	color: #626262;
@@ -88,7 +88,8 @@ h1 {
 	background: url(../images/body_bottom.jpg) no-repeat center;
 	height: 37px;
 }
-
+/*-detail--*/
+/*phân trang*/
 .phantrang {
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -190,4 +191,15 @@ h1 {
 	position: absolute;
 	top: 5px;
 	left: 5px;
+}
+
+.info {
+	font-size: 9pt;
+	color: maroon;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	
+}
+.info2 {
+	font-size: 9pt;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
