@@ -179,11 +179,6 @@
 	height: 4px;
 }
 
-/* #text_menu {
-	float: left;
-	margin: 20px 0 0 10px;
-	text-align: left;
-} */
 #menu_bootom {
 	float: right;
 	margin-top: 10px;
@@ -328,6 +323,10 @@
 	padding: 10px 0 2px 14px;
 }
 
+#cat_name2 {
+	color: #555555;
+	float: right;
+}
 #xemthem2 {
 	background: url(../images/icon_xemthem.jpg) no-repeat left 31px;
 	padding: 27px 0 0 10px;
@@ -341,12 +340,10 @@
 	border-bottom: 1px dashed #cccccc;
 	width: 510px;
 }
-
 #hr_top_newstype {
 	border-bottom: 3px solid #930000;
 	width: 510px;
 }
-
 #hr_top_newstype_contact {
 	border-bottom: 3px solid #930000;
 	width: 711px;
@@ -363,7 +360,6 @@
 	font-weight: 700;
 	color: #ffffff;
 }
-
 .catname_left {
 	background: url(../images/icon_catleft.jpg) no-repeat 1px center;
 	font-size: 11px;
@@ -373,11 +369,9 @@
 	border-bottom: 1px solid #f4f4f4;
 	font-weight: 600;
 }
-
 .catname_left a {
 	color: #3e3e3e;
 }
-
 .catname_left a:hover {
 	color: #930000;
 }
@@ -393,7 +387,6 @@
 	text-align: left;
 	padding: 7px 0 7px 0px;
 }
-
 #detail_news_title h1 {
 	font-size: 14px;
 	font-weight: 600;
@@ -406,13 +399,11 @@
 	font-family: "Times New Roman", Times, serif;
 	letter-spacing: -0.2pt;
 }
-
 #news_des_detail span {
 	font-size: 14pt;
 	font-family: "Times New Roman", "serif";
 	font-weight: bold;
 }
-
 #news_des_detail p {
 	font-family: "Times New Roman", "serif";
 	font-size: 14pt;
@@ -421,8 +412,15 @@
 	line-height: normal;
 }
 
+
 ul.menu {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	z-index: 999;
+}
+
+ul.menu * {
 	margin: 0;
 	padding: 0;
 	z-index: 999;
@@ -433,7 +431,6 @@ ul.menu a {
 	color: #fff;
 	text-decoration: none;
 	z-index: 999;
-	line-height: 32px;
 }
 
 ul.menu li {
@@ -444,6 +441,9 @@ ul.menu li {
 	z-index: 999;
 }
 
+ul.menu li a {
+	line-height: 32px;
+}
 
 ul.menu .menulink_1 {
 	padding: 0 20px;
@@ -507,6 +507,7 @@ ul.menu ul ul {
 	z-index: 999;
 }
 
+ul.menu .menulink_1:hover,
 ul.menu .menuhover {
 	background: url(../images/bg_mnu_s.jpg) repeat-x;
 	padding: 0 20px;
@@ -517,11 +518,19 @@ ul.menu .menuhover {
 	margin-top: 3px;
 }
 
+ul.menu .menulink {
+	padding: 0 20px;
+	font-weight: bold;
+	z-index: 999;
+}
+
 ul.menu .menulink:hover,
 ul.menu .menuhover {
 	color: #d00405;
 	z-index: 999;
 }
+
+
 
 /*+----------------------------------------------------+*/
 /*| COIN SLIDER |*/
